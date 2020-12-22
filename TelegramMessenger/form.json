@@ -1,0 +1,40 @@
+{
+    "elements":
+    [
+        {   "type": "ValidationTextBox", "name": "BotID", "caption": "Bot ID" },
+        {   "type": "CheckBox", "name": "FetchIncoming", "caption": "Eingehende Nachrichten abrufen" },
+		{   "type": "CheckBox", "name": "ProcessIncoming", "caption": "Eingehende Nachrichten verarbeiten" },
+		{   "type": "SelectScript", "name": "ProcessIncomingSkript", "caption": "Skript für eingehende Nachrichten" },
+        {
+            "type": "List",
+            "caption": "Empfänger",
+            "name": "UserList",
+            "rowCount": 5,
+            "add": true,
+            "delete": true,
+            "columns": [
+                {
+                    "caption": "Benutzername",
+                    "name": "user",
+                    "width": "auto",
+                    "sortColumn": "Number",
+                    "add": "",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                },
+                {
+                    "caption": "ChatID",
+                    "name": "chat_id",
+                    "width": "200px",
+                    "visible": true,
+                    "add": "",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                }
+            ],
+            "values": []
+        }
+    ]
+}

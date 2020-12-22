@@ -1,0 +1,15 @@
+{
+    "id": "{F0F622C8-318D-B5A8-62DF-33DEDB977E99}",
+    "name": "TelegramMessenger",
+    "type": 3,
+    "vendor": "",
+    "aliases":
+    [
+        "Telegram Messenger"
+    ],
+    "url": "https://github.com/Charykun/SymconTelegramMessenger",
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "Telegram"
+}
