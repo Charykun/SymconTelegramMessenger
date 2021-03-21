@@ -113,7 +113,7 @@
                 return FALSE;
             }
             $img = curl_file_create($image_path, $mime, md5($image_path.time()).$ext);
-            $content = array('chat_id' => $chat_id, 'caption' => $text, 'photo' => $img);
+            $content = array('chat_id' => $chat_id, 'caption' => $text, 'parse_mode' => 'Markdown', 'photo' => $img);
             return $telegram->sendPhoto($content);
         }
 
